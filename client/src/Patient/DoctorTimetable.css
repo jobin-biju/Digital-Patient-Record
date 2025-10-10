@@ -1,0 +1,102 @@
+.doctor-calendar-area {
+  background-color:#fff ; /* main background */
+  padding: 60px 0;
+  color: #fff;
+}
+
+.section-title h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.section-title p {
+  color: black;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Table */
+.doctor-calendar-table .table {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.doctor-calendar-table .table thead th {
+  background-color: #66a536; /* darker green */
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px;
+  border: none;
+}
+
+.doctor-calendar-table .table tbody td {
+  text-align: center;
+  padding: 20px 15px;
+  vertical-align: middle;
+  border: 1px solid #eee;
+  color: #333;
+}
+
+.doctor-calendar-table .table tbody td h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.doctor-calendar-table .table tbody td span {
+  font-size: 14px;
+  color: #666;
+}
+
+.doctor-calendar-table .time {
+  font-weight: 700;
+  color: #88C250;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .doctor-calendar-table .table thead {
+    display: none;
+  }
+
+  .doctor-calendar-table .table,
+  .doctor-calendar-table .table tbody,
+  .doctor-calendar-table .table tr,
+  .doctor-calendar-table .table td {
+    display: block;
+    width: 100%;
+  }
+
+  .doctor-calendar-table .table tr {
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: #fff;
+    padding: 15px;
+  }
+
+  .doctor-calendar-table .table td {
+    text-align: left;
+    border: none;
+    padding: 10px 5px;
+  }
+
+  .doctor-calendar-table .time {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #88C250;
+  }
+}

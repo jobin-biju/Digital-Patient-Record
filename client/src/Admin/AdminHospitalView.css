@@ -1,0 +1,545 @@
+/* AdminHospitalView.css - Professional Corporate Style */
+
+/* Global Professional Styles */
+.min-vh-100 {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Section - Professional Layout */
+.header-section {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb-nav .breadcrumb {
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb-nav .breadcrumb-item a {
+  color: #6c757d;
+  font-size: 0.875rem;
+}
+
+.breadcrumb-nav .breadcrumb-item.active {
+  color: #495057;
+  font-weight: 500;
+}
+
+.page-title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #212529;
+  margin: 0;
+  letter-spacing: -0.025em;
+}
+
+.page-subtitle {
+  color: #6c757d;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Stats Summary - Clean & Professional */
+.stats-summary {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stats-item .stats-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #495057;
+  line-height: 1;
+}
+
+.stats-item .stats-label {
+  font-size: 0.875rem;
+  color: #6c757d;
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+
+/* Main Content Card - Corporate Style */
+.main-content-card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+  overflow: hidden;
+}
+
+.card-header-custom {
+  background: #ffffff;
+  padding: 1.5rem 2rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.card-header-custom h4 {
+  font-weight: 600;
+  color: #212529;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.header-actions .btn {
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 0.375rem 0.75rem;
+}
+
+.btn-outline-primary {
+  color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-outline-secondary {
+  color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+/* Professional Table Styling */
+.table-container {
+  padding: 0;
+  overflow: hidden;
+}
+
+.hospital-table {
+  margin: 0;
+  font-size: 0.875rem;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table-header {
+  background-color: #f8f9fa;
+}
+
+.table-header th {
+  border: none;
+  border-bottom: 2px solid #dee2e6;
+  padding: 1rem;
+  font-weight: 600;
+  color: #495057;
+  font-size: 0.875rem;
+  text-transform: none;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.th-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-header th.text-start .th-content {
+  justify-content: flex-start;
+}
+
+/* Professional Row Styling */
+.hospital-row {
+  border-bottom: 1px solid #e9ecef;
+  transition: background-color 0.2s ease;
+}
+
+.hospital-row:hover {
+  background-color: #f8f9fa;
+}
+
+.hospital-row:last-child {
+  border-bottom: none;
+}
+
+.hospital-row td {
+  padding: 1.25rem 1rem;
+  vertical-align: middle;
+  border: none;
+}
+
+/* Hospital Information - Clean Typography */
+.hospital-info .hospital-name {
+  color: #212529;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+
+.department-tag {
+  background-color: #e9ecef;
+  color: #495057;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Registration Information */
+.reg-info .reg-number {
+  background-color: #f8f9fa;
+  color: #495057;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-weight: 500;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.8125rem;
+  display: inline-block;
+}
+
+/* Contact Information - Structured Layout */
+.contact-info {
+  font-size: 0.875rem;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.contact-label {
+  font-weight: 500;
+  color: #6c757d;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-value {
+  color: #495057;
+  font-weight: 500;
+}
+
+/* Address Information */
+.address-info {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.address-text {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #6c757d;
+  text-align: center;
+}
+
+/* Administrator Information */
+.admin-info {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.admin-info .admin-name {
+  color: #212529;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  margin-bottom: 0.5rem;
+}
+
+.admin-contact {
+  font-size: 0.8125rem;
+}
+
+.contact-detail {
+  text-align: center;
+  line-height: 1.4;
+}
+
+.contact-detail strong {
+  color: #495057;
+}
+
+/* Professional Logo Display */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hospital-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 2px solid #e9ecef;
+  transition: all 0.2s ease;
+}
+
+.hospital-logo:hover {
+  border-color: #dee2e6;
+  transform: scale(1.05);
+}
+
+/* Document Actions - Professional Buttons */
+.document-actions {
+  text-align: center;
+}
+
+.btn-document {
+  background-color: #0056b3;
+  color: #ffffff;
+  border: 1px solid #0056b3;
+  padding: 0.375rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.btn-document:hover {
+  background-color: #004494;
+  border-color: #004494;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.no-document {
+  color: #6c757d;
+  font-style: italic;
+  font-size: 0.8125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+/* Empty State - Professional Messaging */
+.empty-state {
+  padding: 4rem 2rem;
+  color: #6c757d;
+}
+
+.empty-state i {
+  opacity: 0.3;
+  color: #adb5bd;
+}
+
+.empty-state h5 {
+  color: #6c757d;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.empty-state p {
+  color: #adb5bd;
+  font-size: 0.875rem;
+}
+
+/* Loading Spinner - Corporate Style */
+.spinner-border {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #0056b3;
+}
+
+/* Responsive Design - Professional Breakpoints */
+@media (max-width: 1400px) {
+  .hospital-table {
+    font-size: 0.8125rem;
+  }
+  
+  .hospital-row td {
+    padding: 1rem 0.75rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .page-title {
+    font-size: 1.625rem;
+  }
+  
+  .hospital-logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .admin-info,
+  .address-info {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-section {
+    padding: 1.5rem;
+  }
+  
+  .page-title {
+    font-size: 1.5rem;
+  }
+  
+  .stats-summary {
+    margin-top: 1rem;
+  }
+  
+  .card-header-custom {
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .card-header-custom .d-flex {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 1rem;
+  }
+  
+  .header-actions {
+    align-self: stretch;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-section {
+    text-align: center;
+  }
+  
+  .hospital-row td {
+    padding: 1rem 0.5rem;
+  }
+  
+  .table-header th {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.8125rem;
+  }
+  
+  .hospital-table {
+    font-size: 0.75rem;
+  }
+  
+  .admin-info,
+  .address-info {
+    max-width: 150px;
+  }
+  
+  .contact-detail {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-content-card {
+    margin: 0 0.5rem;
+    border-radius: 6px;
+  }
+  
+  .header-section {
+    margin: 0 0.5rem 1.5rem 0.5rem;
+  }
+  
+  .hospital-logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .btn-document {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+  
+  .page-title {
+    font-size: 1.375rem;
+  }
+}
+
+/* Professional Animation Effects */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-content-card {
+  animation: fadeIn 0.4s ease;
+}
+
+.hospital-row {
+  animation: fadeIn 0.3s ease;
+  animation-fill-mode: both;
+}
+
+.hospital-row:nth-child(n) {
+  animation-delay: calc(0.05s * var(--row-index, 1));
+}
+
+/* Professional Scrollbar */
+.table-responsive::-webkit-scrollbar {
+  height: 6px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  background: #f8f9fa;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #dee2e6;
+  border-radius: 3px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background: #adb5bd;
+}
+
+/* Print Styles for Professional Reports */
+@media print {
+  .header-actions,
+  .btn-document {
+    display: none !important;
+  }
+  
+  .main-content-card {
+    box-shadow: none !important;
+    border: 1px solid #000 !important;
+  }
+  
+  .hospital-table {
+    font-size: 0.75rem !important;
+  }
+  
+  .hospital-row:hover {
+    background-color: transparent !important;
+  }
+}
+
+.addbtn{
+    margin-left: 1095px;
+}
+
+.tb{
+    margin-top: -550px;
+    margin-left: 10px;
+}

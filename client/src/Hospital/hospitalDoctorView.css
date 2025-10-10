@@ -1,0 +1,214 @@
+/* hospitalDoctorView.css */
+
+.hospital-layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f8fafc;
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 280px;
+    padding: 32px;
+    background-color: #f8fafc;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.page-title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a202c;
+    letter-spacing: -0.025em;
+}
+
+.add-doctor-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+.add-doctor-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+}
+
+.btn-icon {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.table-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.doctors-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.doctors-table thead {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.doctors-table th {
+    padding: 16px 12px;
+    text-align: left;
+    font-weight: 600;
+    color: #374151;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #e5e7eb;
+    white-space: nowrap;
+}
+
+.doctors-table td {
+    padding: 16px 12px;
+    border-bottom: 1px solid #f3f4f6;
+    color: #4b5563;
+    vertical-align: middle;
+}
+
+.doctors-table tbody tr {
+    transition: all 0.2s ease;
+}
+
+.doctors-table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.doctors-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: capitalize;
+}
+
+.btn-edit {
+    background-color: #10b981;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #059669;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+}
+
+.btn-delete {
+    background-color: #ef4444;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #dc2626;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        padding: 16px;
+    }
+    
+    .content-header {
+        flex-direction: column;
+        gap: 16px;
+        align-items: stretch;
+    }
+    
+    .table-container {
+        border-radius: 8px;
+    }
+    
+    .doctors-table {
+        font-size: 12px;
+    }
+    
+    .doctors-table th,
+    .doctors-table td {
+        padding: 12px 8px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .doctors-table th,
+    .doctors-table td {
+        padding: 12px 8px;
+        font-size: 13px;
+    }
+}
+
+/* Loading and Empty States */
+.table-loading {
+    text-align: center;
+    padding: 48px 24px;
+    color: #6b7280;
+}
+
+.table-empty {
+    text-align: center;
+    padding: 48px 24px;
+    color: #6b7280;
+}
+
+.table-empty h3 {
+    margin: 0 0 8px 0;
+    color: #374151;
+}
+
+.table-empty p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#doctor_icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+}
