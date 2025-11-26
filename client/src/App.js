@@ -1,63 +1,3 @@
-// import logo from './logo.svg';
-// import './App.css';
-// import AdminSidebar from './Admin/AdminSidebar';
-// import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import AdminHospital from './Admin/AdminHospital';
-// import AdminHospitalView from './Admin/AdminHospitalView';
-// import AdminDoctors from './Admin/AdminDoctors';
-// import Login from './Login/login';
-// import Registration from './Patient/Registration'
-// import React, { useState } from 'react';
-// import Home from './Patient/Home';
-// import HospitalSidebar from './Hospital/HospitalSidebar';
-// import HospitalDoctorView from './Hospital/HospitalDoctorView';
-// import AddDoctor from './Hospital/AddDoctor';
-// import DoctorUpdate from './Hospital/DoctorUpdate';
-// import PatientDetails from './Hospital/PatientDetails';
-// import AddLab from './Hospital/AddLab';
-// import LabView from './Hospital/LabView';
-// import LabEdit from './Hospital/LabEdit';
-
-// function App() {
-//   const[auth]= useState(JSON.parse(localStorage.getItem("yourstorage")))
-//   return (
-//     <BrowserRouter>
-//     {auth == null ?(
-//       <Routes>
-//       <Route path='/' element={<Login/>}></Route>
-//       <Route path='/register' element={<Registration/>}></Route>
-//       </Routes>
-//     ):auth.userType == 1?(
-//         <Routes>
-//         <Route path='/' element={<AdminSidebar/>}></Route>
-//         <Route path='/hospital' element={<AdminHospital/>}></Route>
-//         <Route path='/hospitalview' element={<AdminHospitalView/>}></Route>
-//         <Route path='/doctorview' element={<AdminDoctors/>}></Route>
-//       </Routes>
-//     ):auth.userType == 2?(
-//         <Routes>
-//         <Route path='/' element={<HospitalSidebar/>}></Route>
-//         <Route path='/hospitaldoctorview' element={<HospitalDoctorView/>}/>
-//         <Route path='/addDoctor' element={<AddDoctor/>}></Route>
-//         <Route path='/updateDoctor' element={<DoctorUpdate/>}></Route>
-//         <Route path='/hospitalpatientview' element={<PatientDetails/>}></Route>
-//         <Route path='/hospitallabview' element={<LabView/>}></Route>
-//         <Route path='/hospitallabadd' element={<AddLab/>}></Route>
-//         <Route path='/hospitallabedit' element={<LabEdit/>}></Route>
-
-
-//       </Routes>
-//     ):auth.userType == 3?(
-//       <Route path='/' element={<Home/>}></Route>
-//     ):null} 
-//     </BrowserRouter>
-//   );
-// }
-
-// export default App;
-
-
-
 import logo from './logo.svg';
 import './App.css';
 import AdminSidebar from './Admin/AdminSidebar';
@@ -142,14 +82,6 @@ function App() {
         </Routes>
       ) : auth.userType == 2 ? (
         <Routes>
-          {/* <Route path='/' element={<HospitalSidebar/>}></Route>
-        <Route path='/hospitaldoctorview' element={<HospitalDoctorView/>}/>
-        <Route path='/addDoctor' element={<AddDoctor/>}></Route>
-        <Route path='/updateDoctor' element={<DoctorUpdate/>}></Route>
-        <Route path='/hospitalpatientview' element={<PatientDetails/>}></Route>
-        <Route path='/hospitallabview' element={<LabView/>}></Route>
-        <Route path='/hospitallabadd' element={<AddLab/>}></Route>
-        <Route path='/hospitallabedit' element={<LabEdit/>}></Route> */}
           <Route path='/' element={<HospitalSidebar />}></Route>
           <Route path='/hospitaldoctorview' element={<HospitalDoctorView />} />
           <Route path='/addDoctor' element={<AddDoctor />}></Route>
@@ -165,10 +97,6 @@ function App() {
           <Route path='/hospitaldashboard' element={<DashboardHospital />} />
           <Route path='/transferdata' element={<TransferData />} />
           <Route path='/viewtransferdata' element={<ViewTransferData />} />
-
-
-
-
         </Routes>
       ) : auth.userType == 3 ? (
         <Routes>
@@ -210,9 +138,6 @@ function App() {
           <Route path='/labreport' element={<LabReport />} />
           <Route path='/acceptedeport' element={<LabResult />} />
           <Route path='/history' element={<History />} />
-
-
-
         </Routes>
       ) : null}
     </BrowserRouter>
